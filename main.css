@@ -1,0 +1,72 @@
+body {
+  font-size: 1rem;
+  font-family: 'Catamaran', sans-serif;
+  /* line-height: 10px; */
+}
+
+main{
+  justify-content: center;
+}
+
+main section{
+  padding: 40px 100%;
+}
+
+main section:nth-child(3n+1){ background-color: #7738C7;}
+main section:nth-child(3n+2){ background-color: #C73841;}
+main section:nth-child(3n+3){ background-color: #89C738;}
+
+h3{
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3::after{
+  background-color: rgba(255, 255, 255, 0.671);
+  content: "";
+  display: block;
+  height: 2px;
+  /* position: relative; */
+  min-width: 200px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-header {
+  padding: 30px 20px 10px;
+  justify-content: center;
+}
+
+.site-title {
+  font-size: 1.3em;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.pages-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.pages-nav li {
+  padding: 10px;
+}
+
+.banner {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Bungee Outline', cursive;
+  /* font-family: 'Bungee Inline', cursive; */
+  background-color: #38c7be;
+}
+
+.site-footer{
+  padding: 30px;
+  text-align: center;
+}
+
