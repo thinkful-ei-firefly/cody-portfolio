@@ -9,7 +9,8 @@ main{
 }
 
 main section{
-  padding: 40px 100%;
+  flex: 1;
+  padding: 40px;
 }
 
 main section:nth-child(3n+1){ background-color: #7738C7;}
