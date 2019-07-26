@@ -5,7 +5,9 @@ body {
 }
 
 main{
-  justify-content: center;
+  margin: auto;
+  max-width: 600px;
+  flex-direction: column;
 }
 
 main section{
@@ -37,12 +39,23 @@ h3::after{
   flex-wrap: wrap;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
 .site-header {
   padding: 30px 20px 10px;
   justify-content: center;
 }
 
 .site-title {
+  text-align: center;
   font-size: 1.3em;
   padding-bottom: 10px;
   font-weight: bolder;
@@ -67,8 +80,28 @@ h3::after{
   background-color: #38c7be;
 }
 
+.project{
+  border: 1px solid white;
+  margin-top: 10px;
+}
+
+.project img{
+}
+
+.project p{
+  border: 1px solid white;
+  padding: 10px 0;
+}
+
 .site-footer{
   padding: 30px;
   text-align: center;
 }
 
+@media only screen and (min-width: 600px){
+  .site-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
