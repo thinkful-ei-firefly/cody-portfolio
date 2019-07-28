@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="main.css">
 
-  <title>Cody Oh</title>
+  <title>Cody</title>
 </head>
 
 <body>
@@ -20,9 +20,9 @@
     </div>
     <nav>
       <ul class="wrap pages-nav">
-        <li><a>About</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -31,32 +31,77 @@
     <h2>Hi, I'm Cody the Coder</h2>
   </section>
 
-  <main class="wrap">
+  <main class="col">
 
-    <section>
-      <h3>About</h3>
-    </section>
-
-    <section>
-      <h3>Projects</h3>
-
-      <article class="project col">
-        <img href="#" alt="project image"/>
-        <p>This is a summary of the project</p>
+    <section class="about" id="about">
+      <div class="row">
+        <div class="triangle"></div>
+        <h3>About</h3>
+      </div>
+      <article>
+        <p>I’m a full stack developer mainly using the
+          MERN stack (I think).</p>
+        <p>As a teen my parents would turn off the internet if my
+          grades weren’t up to par, so first I figured out how to
+          wardial then how to use Aircrack-ng on linux to get my
+          internet fix(sorry mom and dad).</p>
+        <p>Before javascript/MERN I took a few computer science class’s in college, then
+          dabbled more in coding with a small side scroller and web
+          development with python/django and java/spring/springboot.</p>
+        <p>
+          During that 6 year time period I worked from a rough
+          carpenter to project manager of high end spec homes.</p>
+        <p>I love tech, learning something new, surfing, reading
+          and music "you’ve never heard of”. Let’s dance.</p>
       </article>
-
     </section>
 
-    <section>
-      <h3>Contact</h3>
+    <section class="projects" id="projects">
+      <div class="row">
+        <div class="triangle"></div>
+        <h3>Projects</h3>
+      </div>
+      <div class="wrap spc-btw">
+        <article class="project col">
+          <img src="./images/bestq.png" alt="project image" />
+          <ul>
+            <li>An app that ask exceedingly difficult math question and keeps score before allowing you to restart</li>
+            <li>A responsive app made using html, css, javascript and jQuery</li>
+            <li>Live: <a href="https://thinkful-ei-firefly.github.io/quizz-app-ahmed-cody/">Best Quiz!</a></li>
+            <li>Repo: <a href="https://github.com/thinkful-ei-firefly/quizz-app-ahmed-cody">Github Repo</a></li>
+          </ul>
+        </article>
+        <article class="project col">
+          <img src="./images/bestq.png" alt="project image" />
+          <ul>
+            <li>An app that ask exceedingly difficult math question and keeps score before allowing you to restart</li>
+            <li>A responsive app made using html, css, javascript and jQuery</li>
+            <li>Live: <a href="https://thinkful-ei-firefly.github.io/quizz-app-ahmed-cody/">Best Quiz!</a></li>
+            <li>Repo: <a href="https://github.com/thinkful-ei-firefly/quizz-app-ahmed-cody">Github Repo</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="triangle"></div>
+        <h3>Contact</h3>
+      </div>
+      <ul>
+        <li>lpmaze@gmail.com</li>
+        <li>github</li>
+        <li>linkedIn</li>
+      </ul>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <h4>feeter</h4>
+    <h4>2019</h4>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="main.js"></script>
 </body>
 
