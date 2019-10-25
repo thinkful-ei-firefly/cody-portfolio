@@ -1,7 +1,7 @@
 body *{
   font-family: 'Catamaran', sans-serif;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -75,7 +75,6 @@ p{
 
 .site-header {
   padding: 30px 20px 10px;
-  justify-content: center;
 }
 
 .site-header ul{
@@ -102,6 +101,11 @@ p{
 .pages-nav a{
   color: black;
   text-decoration-color: magenta;
+  transition: all 0.3s ease-in-out;
+}
+
+.pages-nav a:hover{
+  font-size: 25px;
 }
 
 a:hover{
@@ -144,6 +148,11 @@ a:hover{
   margin-left: -9px;
 }
 
+.triangle:hover{
+  border-color: transparent transparent red red;
+}
+
+
 .about article{
   /* padding: 20px; */
   padding: 20px 5%;
@@ -156,11 +165,16 @@ a:hover{
   max-width: 300px;
 }
 
+.project a{
+  /* margin: 20px; */
+}
+
 .project img {
   border: black 5px solid;
   border-radius: 5px;
   margin: 20px 0 10px 0;
   width: 100%;
+  height: 225px;
 }
 
 .project ul{
@@ -191,8 +205,11 @@ a:hover{
 @media only screen and (min-width: 600px) {
   .site-header {
     display: flex;
-    flex-direction: row;
+    margin: 0 auto;
     justify-content: space-between;
+    align-content: center;
+    max-width: 700px;
+    height: 84px;
   }
 
   main section{

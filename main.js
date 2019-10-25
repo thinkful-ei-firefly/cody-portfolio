@@ -1,19 +1,27 @@
-
 const handleSmoothScroll = () => {
   $('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
+    e.preventDefault()
 
-    const position = $($(this).attr('href')).offset().top;
+    const position = $($(this).attr('href')).offset().top
 
     $('body, html').animate({
       scrollTop: position
-    });
-  });
-};
-
-
-function runHandlers() {
-  handleSmoothScroll();
+    })
+  })
 }
 
-$(runHandlers());
+// const handleHoverSection = () => {
+//   $('section').hover(
+//     // function(){ $(this).css('background-color', 'red')},
+//     function(){ console.log($(this))},
+//     () => $(this).css('background-color', 'white')
+//   )
+
+// }
+
+function runHandlers() {
+  handleSmoothScroll()
+  // handleHoverSection()
+}
+
+$(runHandlers())
